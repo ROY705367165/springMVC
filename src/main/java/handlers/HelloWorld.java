@@ -2,6 +2,8 @@ package handlers;
 
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -27,7 +29,16 @@ public class HelloWorld {
     
     @RequestMapping(value="/helloworld1/bb/{dd}", method=RequestMethod.GET)
     public String hello3(@PathVariable("dd") String sb, Model model){
-    	model.addAttribute(sb);
+    	model.addAttribute("sb", sb);
+    	return "success";
+    }
+    
+    @RequestMapping("/helloworld2")
+    public String hello4(HttpServletRequest request){
+    	String sb = (String)request.getParameter("sb");
+    	System.out.println(sb);
+    	request.setAttribute("sb", sb);
+    	
     	return "success";
     }
 }

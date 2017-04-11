@@ -19,10 +19,6 @@
  		<param-value>classpath*:spring.xml</param-value>
 	</context-param>
 
-	
-	
-	
-	
 	<!-- 配置DispatchcerServlet -->
     <servlet>
     	<servlet-name>springDispatcherServlet</servlet-name>
