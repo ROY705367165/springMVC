@@ -2,6 +2,7 @@
 <html>
 <body>
 <h2>Hello World!</h2>
-<a href="helloworld">hello world</a>
+<a href="helloworld/aa?sb=tr">hello world</a>
+<a href="helloworld1/bb/dd">hello world</a>
 </body>
 </html>

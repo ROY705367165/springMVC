@@ -9,7 +9,7 @@
 <body>
 
 <h4>Success Page</h4>
-
+<h3>model : '${sb}'</h3>
 </body>
 </html>
 
